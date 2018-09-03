@@ -3,12 +3,15 @@
  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.example.eventmanage.domain">
- <class name="Attend" table="attend">
- <id name="attendId" column="attend_id">
- <generator class="native" />
- </id>
- <property name="userId" column="user_id" type="integer" />
- <property name="eventId" column="event_id" type="integer" />
-
- </class>
+	<class name="Users" table="users">
+		<id name="userId" column="user_id">
+			<generator class="native" />
+		</id>
+		<property name="loginId" column="login_id" type="string" />
+		<property name="loginPass" column="login_pass" type="string" />
+		<property name="userName" column="user_name" type="string" />
+		<property name="userType" column="user_type" type="integer" />
+		<property name="groupId" column="group_id" type="integer" />
+		<property name="createdAt" column="created_at" type="timestamp" />
+	</class>
 </hibernate-mapping>

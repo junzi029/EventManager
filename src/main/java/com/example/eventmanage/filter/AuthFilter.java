@@ -44,7 +44,7 @@ public class AuthFilter implements Filter {
 		String uri = req.getRequestURI();
 		if (!uri.endsWith("/login") && !uri.contains("/css/") && !uri.contains("/js/") && !uri.contains("/fonts/")) {
 			if (session.getAttribute("userName") == null) {
-				res.sendRedirect("/kadaimvc/login");
+				res.sendRedirect("login");
 				return;
 			}
 		}

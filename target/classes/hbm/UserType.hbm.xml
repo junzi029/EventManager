@@ -4,11 +4,11 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.example.eventmanage.domain">
  <class name="UserType" table="user_type">
- <id name="attendId" column="attend_id">
+ <id name="typeId" column="type_id">
  <generator class="native" />
  </id>
- <property name="userId" column="user_id" type="integer" />
- <property name="eventId" column="event_id" type="integer" />
+
+ <property name="typeName" column="type_name" type="string" />
 
  </class>
 </hibernate-mapping>
