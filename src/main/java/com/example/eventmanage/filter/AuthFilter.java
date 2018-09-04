@@ -42,7 +42,8 @@ public class AuthFilter implements Filter {
 		HttpServletResponse res = (HttpServletResponse) response;
 		HttpSession session = req.getSession();
 		String uri = req.getRequestURI();
-		if (!uri.endsWith("/login") && !uri.contains("/css/") && !uri.contains("/js/") && !uri.contains("/fonts/")) {
+		if (!uri.endsWith("/login") && !uri.contains("/css/") && !uri.contains("/js/") && !uri.contains("/fonts/")
+				&& !uri.contains("/images/")) {
 			if (session.getAttribute("userName") == null) {
 				res.sendRedirect("login");
 				return;

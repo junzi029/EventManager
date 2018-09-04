@@ -51,7 +51,7 @@ public class EventController {
 		int totalPages = eventDao.totalPages(NUM_PER_PAGE);
 		model.addAttribute("totalPages", totalPages);
 		model.addAttribute("currentPage", page);
-		return "listItem";
+		return "todayEvent";
 	}
 
 	@RequestMapping(value = "addItem", method = RequestMethod.GET)

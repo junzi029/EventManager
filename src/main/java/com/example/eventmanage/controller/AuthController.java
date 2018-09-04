@@ -38,7 +38,7 @@ public class AuthController {
 			if (users != null) {
 				session.setAttribute("userId", users.getLoginId());
 				session.setAttribute("userName", users.getUserName());
-				return "redirect:/itemList";
+				return "redirect:/todayEvent";
 			}
 			errors.reject("error.login");
 			return "login";

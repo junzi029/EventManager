@@ -15,10 +15,10 @@
 	<div class="container">
 		<div class="row" style="margin-top: 20px">
 			<div class="col-sm-6 col-sm-offset-3">
-				<div class="panel panel-primary">
+				<div class="panel panel-default">
 
 					<div class="panel-heading">
-						<h1 class="panel-title">会員管理システム ログイン</h1>
+						<h1 class="panel-title"><img src="images/EventManager.png" height="50px"></h1>
 					</div>
 
 					<div class="panel-body">

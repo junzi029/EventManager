@@ -10,7 +10,7 @@
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample">
 				<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<spring:url value="/itemList" />">備品管理システム</a>
+			<a class="navbar-brand" href="<spring:url value="/todayEvent" />"><img src="images/EventManager.png" height="50px"></a>
 		</div>
 
 		<div class="collapse navbar-collapse" id="navbarEexample">
